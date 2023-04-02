@@ -1,0 +1,8 @@
+Poll Application ver: 0.1.0
+	1) Created Django Project - PollApp
+	2) Created a base.html template ==> future ref: template inheritance
+	3) Created auth_app ==> for authentication purpose
+	4) Inside auth_app ==> created non-functional HTML pages for ulogin, usignup, uwelcome.
+	5) Inside auth_app.views ==> did basic rendering of html pages.
+	Learnt: 
+	
