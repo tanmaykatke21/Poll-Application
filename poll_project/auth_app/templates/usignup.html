@@ -1,4 +1,21 @@
 {% extends 'base.html' %}
 {% block content %}
-<h1>Signup Page</h1>
+<html>
+	<head>
+	</head>
+	<body>
+		<form method="POST">
+		{% csrf_token %}
+			<h1>Signup Page</h1>
+			<input type="text" name="un" placeholder="Enter Username" minlength=6 maxlength=20 required/>
+			<br/><br/>
+			<input type="password" name="pw1" placeholder="Enter Password" minlength=8 maxlength=20 required/>
+			<br/><br/>
+			<input type="password" name="pw2" placeholder="Repeat Password" minlength=8 maxlength=20 required/>
+			<br/><br/>
+			<input type="Submit" value="Signup"/>		
+		</form>
+		{{ msg }}
+	</body>
+</html>
 {% endblock %}

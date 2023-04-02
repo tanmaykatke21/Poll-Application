@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+<html>
+	<head>
+		<script>
+			function alert_message()
+			{
+				alert("Password changed successfully.")
+			}
+		</script>
+	</head>
+	<body>
+		<form method="POST">
+		{% csrf_token %}
+			<h1>Change Password</h1>	
+			<input type="password" placeholder="Enter New Password" name="npw1" minlength=6 maxlength=20 required />
+			<br/><br/>
+			<input type="password" placeholder="Repeat New Password" name="npw2" minlength=6 maxlength=20 required />
+			<br/><br/>
+			<input type="Submit" value="Change Password" />		
+		</form>
+		{{ msg }}
+	</body>
+</html>
+{% endblock %}
